@@ -34,7 +34,10 @@ function Utility() {
       .toDataURL("imge/png")
       .replace("image/png", "image/octet-stream");
     download.setAttribute("href", image);
-    download.setAttribute("download", "myDraw.png");
+    download.setAttribute(
+      "download",
+      "myDraw-" + new Date().toISOString() + ".png"
+    );
   }
 
   return (
