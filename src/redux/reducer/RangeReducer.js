@@ -1,7 +1,7 @@
 import { CHANGE_RANGE } from "../../action";
 
 const rangeInit = {
-  range: "3.5",
+  range: "3",
 };
 
 function RangeReducer(state = rangeInit, action) {
